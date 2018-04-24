@@ -66,9 +66,14 @@
                     <artifactId>tomcat7-maven-plugin</artifactId>
                     <version>2.2</version>
                     <configuration>
+					    <url>http://localhost:8080/manager/text</url>
+                        <server>localhost</server>
                         <warFile>target/in28minutes.war</warFile>
-                        <path>/</path>
+                        <path>/MyWebApnew</path>
                         <contextReloadable>true</contextReloadable>
+						<username>tomcat</username>
+						<password>tomcat</password>
+						<update>true</update>
                     </configuration>
                 </plugin>
             </plugins>
